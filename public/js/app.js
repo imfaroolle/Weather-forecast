@@ -13,7 +13,7 @@ form.addEventListener('submit' , (e) =>{
         message2.textContent = "Location must be provided";
     }
     message2.textContent = "";
-    fetch('http://localhost:3000/weather?address=' + lc).then((response) => {
+    fetch('/weather?address=' + lc).then((response) => {
     response.json().then((data) => {
         if(data.error){
             console.log(data.error);
