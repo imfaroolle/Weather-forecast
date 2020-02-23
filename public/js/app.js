@@ -21,7 +21,7 @@ form.addEventListener('submit' , (e) =>{
         }
         else{
             
-            console.log(data.location)
+            
             console.log(data.forecast)
             message1.textContent = "Location : " + data.location;
             message2.textContent = " Forecast : " + data.forecast;
